@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="empobj" class="com.ojas.model.Employee">
+		<property name="emplist">
+			<list>
+				<value>A</value>
+				<value>A</value>
+				<value>A</value>
+				<value>B</value>
+				<value>C</value>
+				<value>D</value>
+
+			</list>
+		</property>
+		<property name="empset">
+			<set>
+				<value>A</value>
+				<value>A</value>
+				<value>B</value>
+				<value>C</value>
+				<value>D</value>
+				<value>E</value>
+
+			</set>
+
+		</property>
+		<property name="empmap">
+			<map>
+				<entry key="k2" value="v2" />
+				<entry key="k3">
+					<value>v3</value>
+				</entry>
+				<entry value="v4">
+					<key>
+						<value>k4</value>
+					</key>
+				</entry>
+			</map>
+		</property>
+		<property name="empProperties">
+			<props>
+				<prop key="key1">
+					val1
+				</prop>
+				<prop key="key3">
+					val3
+				</prop>
+				<prop key="key2">
+					val2
+				</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>
